@@ -1,0 +1,126 @@
+num = float(input("Introduce tu edad:"))
+if num >= 18:
+  print("Eres mayor de edad")
+else:
+  print("Eres menor de edad")
+
+----------
+
+num = float(input("Introduce un número:"))
+mod = num % 2
+
+if mod == 0:
+  print("El número introducido es par")
+else:
+  print("El número introducido es impar")
+
+-------
+
+
+serpList = ["Manzana", "Melón", "Uva", "Mango","Cereza"]
+for i in range(0,5):
+  print(serpList[i])
+  fin = len(serpList[i])
+  for j in range(0,fin+1):
+    print(serpList[i][j-1:j])
+-----
+
+Lista = [];
+suma = int();
+n = int(input("Ingrese la cantidad de números:"))
+for i in range(0,n):
+  num = int(input("Introduce el número: "))
+  Lista.append(num)
+  suma = suma + num
+print("La suma de los numeros es: ")
+print(suma)
+
+----
+
+palabra = input("Ingrese una palabra:")
+for i in range(0,len(palabra)):
+  print(palabra[i])
+
+-----
+
+lista_palabras=[]
+n = int(input("Ingrese el número de palabras:"))
+selecion = input("Ingrese la letra de filtro:")
+for i in range(0,n):
+  lista_palabras.append(input("Ingrese palabra:"))
+  if (lista_palabras[i][0] == selecion):
+    print("La palabra empieza por la letra seleccionada")
+    print(lista_palabras[i])
+  else:
+    print("La palabra no empieza por la letra seleccionada")
+-----
+numeros1=[]
+numeros2=[]
+suma=[]
+n=int(input("Ingrese la cantidad de números a ingresar: "))
+for i in range(0,n):
+  numeros1.append(int(input("Ingrese número "+ str(i +1 )+ " de la primera lista:")))
+  numeros2.append(int(input("Ingrese número "+ str(i +1 )+ " de la segunda lista:")))
+  suma.append(numeros1[i] + numeros2[i])
+print("La primera lista es: "+ str(numeros1))
+print("La segunda lista es: "+ str(numeros2))
+print("La suma de los números es: "+str(suma))
+
+-----
+
+lista=[]
+print("TABLA DE MULTIPLICAR")
+for i in range(1,11):
+  for j in range(1,11):
+    lista.append(i*j) 
+  print(lista)
+  lista.clear()
+
+---
+
+print("Acabas de ingresar a una travesia urbana 🏛️  inesperada; tu mision es llegar a clase 📖 temprano; debes tomar la mejor desición para cumplir tu objetivo, recuerda ser tolerante, respetar a los demás, no olvides la dirección de tu viaje. Pista ( es la superior de los puntos cardinales). ¡buena suerte! 🧭")
+seleccion = int(input("Estas esperando el alimentador, pero en 20 minutos no ha pasado. \n¿Que vas a hacer? \n1. Esperar ⏳\n2. Coger un taxi hasta la estación más cercana 🚕 \n3. Coger el proximo el SITP lleno que pase y bajarse en una estación  más cercana 🚌\n"))
+if (seleccion == 1):
+  print("Que buena eleccion, la paciencia es virtud de sabios, el alimentador paso a los 30 segundos.")
+
+  print("Una dama en condición de embarazo 🤰 te pide la silla💺. \n1. Te    haces el dormido😴 \n2. Le das la silla 💺 \n3. Le dices que pida la silla azul 😖")
+  seleccion = int(input(""))
+  if(seleccion == 1):
+    print("Una viejita 👵 te dio un codazo porque sabe que estan fingiendo y te pide que le des la silla, generando una discución 🤼 que te hace llegar tarde.")
+  elif (seleccion == 2):
+    print("¡Que buena elección!, ser amable con los demás es la clave para restaurar la sociedad 🏙️")
+    print("Llegate al Portal🅿️, debes pasar el  torniquete. \n1. Te colas para ahorar dinero 💵\n2. Intentas pasar con la tarjeta para que te preste un pasaje 💳 ")
+    seleccion = int(input(""))
+    if (seleccion == 1):
+      print("Fuiste capturado por la policia 👮, llegando tarde y con un comparendo")
+    else:
+      print("Afortunadamente tu tarjeta de deja pasar 🤞.")
+      print("¿Qué ruta vas a tomar. \n1. D20 (Occidente) ⬅️  \n2. H15 (Sur) ⬇️ \n3. B3 (Norte) ⬆️")
+      seleccion = int(input(""))
+      if(seleccion == 1):
+        print("Esta ruta toma la Calle 80, tu estudiar al Norte de la Ciudad ¡Pendejo! 🤓")
+      elif(seleccion == 2):
+          print("Los H se dirigen al Sur, tu estudias hacia el Norte, Perdiste. ↪️") 
+      else:
+        print("Bien, ahora se sube un vendedor a ofrecer dulces 🍬.\n¿Le compras? \n1. Si \n2. No")
+        seleccion = int(input(""))
+        if (seleccion == 1):
+          print("Bien, la cara de malandrin 🔪 no se la quitaba nadie, por comprarle te has salvado.")
+          print("Te bajaste de la estación, pero alcanzas a visualizar al vendedor hablando con sus compañeros y mirandote extraño 🕵️. Debes tomar una desicion \n1. Correr 🏃 \n2. Avisarle a la policia 👮. \n3. Comprarle más dulces al vendedor🍬")
+          seleccion = int(input(""))
+          if (seleccion == 1):
+            print("Te salvaste, fue la mejor desición que pudiste tomar.\nLlegaste a la universidad Sano y Salvo con 5 minutos de anticipo 🎖️.\nGracias por jugar")
+          elif (seleccion == 2):
+            print("La Policia 👮 no te ayudo, te robaron.")
+          else:
+             print("Te robaron 🔪.Perdiste")
+            
+        else:
+          print("Te han pegado una puñalada 🔪 por no comprar.")  
+  else:
+    print("Un señor te pega por contestón, y llegas tarde con el ojo morado.🥵")
+    
+elif (seleccion == 2):
+  print("Solo tienes dinero suficientes quisas para comprar unos dulces🍬, Perdiste.")
+else :
+  print("El SITP 🚌 va muy lleno y no puedes subirte, Perdiste.")
