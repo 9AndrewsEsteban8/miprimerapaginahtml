@@ -32,15 +32,7 @@ body {font-family: "Open Sans"}
   <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
 </div>
   
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1600px">
 
-  <!-- Header -->
-  <header class="w3-container w3-center w3-padding-48 w3-white" style="background-color: #ADD8E6 !important;">
-    <h1 class="w3-xxxlarge" >Avatar</h1>
-    <h6>Bienvenidos a <span class="w3-tag">Avatar</span></h6>
-  </header>
 
   <!-- Image header -->
   <header class="w3-display-container w3-wide" id="home">
@@ -95,13 +87,62 @@ and is wrapped around the whole page content, except for the footer in this exam
       <div class="w3-container w3-white w3-margin w3-padding-large">
         <div class="w3-center">
           <h3>Aang</h3>
-          <h5>Protagonista de la serie <span class="w3-opacity">AVATAR ACTUAL</span></h5>
+          <h5>Protagonista de la serie <span class="w3-opacity">AVATAR ANTERIOR</span></h5>
         </div>
 
         <div class="w3-justify">
           <img src="img/5461724-aang.webp" alt="Runway" style="width:100%" class="w3-padding-16">
           <p><strong>El gran maestro</strong> Es un niño de 112 años</p>
           <p>Es el último maestro aire que queda, ya que fue el único sobreviviente del exterminio de los Nómadas del Aire que llevó a cabo el ejército del Señor del Fuego Sozin (quien empezó la guerra) cien años atrás para evitar que el próximo avatar naciera entre ellos (ese sería Aang). El destino de Aang como Avatar es dominar los cuatro elementos: el Aire, el Agua, la Tierra y el Fuego y restaurar el equilibrio del mundo. Como Avatar, es el puente entre el mundo Físico y el de los Espíritus. El Agua, la aprendió de Pakku (un maestro agua de la Tribu Agua del Norte) y Katara. La Tierra, la aprendió de Toph, y el fuego, lo aprendió de Zuko. Él está enamorado de Katara y trata varias veces de decirle lo que siente por ella, pero falla continuamente hasta su romántico beso en Ba Sing Se al final de la serie.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/usermaneavatar.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Nubmaster 69<span class="w3-opacity w3-medium">March 12, 2023, 3:48 PM</span></h4>
+                <p>Pero Korra es la Avatar actual según la ultima serie</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/Korra_fan.webp" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Fan de Korra <span class="w3-opacity w3-medium">March 12, 2023, 4:32 PM</span></h4>
+                <p>En efecto Korra es la nueva Avatar, pero los aportes de Anng son muy grandes</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/TierraMaster.webp" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Maestro Tierra 32 <span class="w3-opacity w3-medium">March 12, 2023, 5:14 PM</span></h4>
+                <p>¿La proxima serie cuando será lanzada?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog 2 -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Korra</h3>
+          <h5>Protagonista de la sigueinte serie <span class="w3-opacity">AVATAR ACTUAL</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/korra.jpeg" alt="Runway" style="width:100%" class="w3-padding-16">
+          <p><strong>La rencarnación de Anng</strong> Avatar de la tribu Agua</p>
+          <p>Korra es un personaje de la serie animada de Nickelodeon La leyenda de Korra. Es la sucesora del Avatar Aang y portadora del espíritu de la Luz y la Paz, Raava. Nació en la tribu Agua del Sur y ya a los cuatro años utilizaba sin dominar en totalidad sus habilidades de control del agua, la tierra y el fuego.</p>
           <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
           <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
           <p class="w3-clear"></p>
